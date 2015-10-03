@@ -7,7 +7,9 @@
     <script src="/assets/scripts/app.min.js"></script>
 </head>
 <body>
-    <h3>To Do</h3>
-
+<div ng-controller="ToDoController">
+    <h3>To Do List</h3>
+<input type="text" ng-model="newToDoItem">
+    <button class="btn btn-default" ng-click="addNewItem()">Add To List</button>
 </body>
 </html>
