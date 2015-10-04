@@ -1,3 +1,31 @@
+
+
+body{
+    background-image: url('/assets/images/desk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: larger;
+}
+
+.jumbotron {
+    text-align: center;
+}
+.inputHere,button {
+    position:relative;
+    left: 10%;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+
 li {
+    padding-left: 45%;
     list-style-type: none;
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+.done-true {
+    text-decoration: line-through;
 }
