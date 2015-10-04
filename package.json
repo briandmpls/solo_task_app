@@ -1,0 +1,27 @@
+{
+  "name": "solo_task_app",
+  "version": "1.0.0",
+  "description": "to do app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briandmpls/solo_task_app.git"
+  },
+  "author": "Brian Daves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/briandmpls/solo_task_app/issues"
+  },
+  "homepage": "https://github.com/briandmpls/solo_task_app#readme",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "express": "^4.13.3",
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.1",
+    "grunt-contrib-uglify": "^0.9.2"
+  }
+}
