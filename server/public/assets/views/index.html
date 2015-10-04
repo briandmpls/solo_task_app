@@ -22,7 +22,7 @@
 
         <button class="btn btn-default" ng-click="addNewItem()">Add To List</button>
         <br/>
-        <button class="removeButton" ng-click="removeItem()">Remove Checked Item</button>
+        <button ng-class="blue" ng-click="removeItem()">Remove Checked Item</button>
 
         <ul>
             <li ng-repeat="thing in toDoList">
