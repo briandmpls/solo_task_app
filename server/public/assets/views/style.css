@@ -7,8 +7,8 @@ body{
     font-size: larger;
 }
 
-.jumbotron {
-    text-align: center;
+h1{
+    padding-left: 45%;
 }
 .inputHere,button {
     position:relative;

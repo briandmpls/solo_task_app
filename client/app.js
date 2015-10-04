@@ -9,6 +9,7 @@ app.controller('MainController', ['$scope', function($scope) {
     ];
 
 
+
     $scope.totalToDoList = function(){
         return $scope.toDoList.length;
         };
@@ -20,7 +21,10 @@ app.controller('MainController', ['$scope', function($scope) {
     };
 
 
-    $scope
-
+    $scope.removeItem = function () {
+        $scope.toDoList = _.filter($scope.toDoList, function (thing) {
+            return !thing.done;
+        });
+    };
 
 }]);
