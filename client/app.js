@@ -20,6 +20,14 @@ app.controller('MainController', ['$scope', function($scope) {
         $scope.newToDoItem = '';
     };
 
+    //Remove old list
+    $scope.newList = function() {
+        $scope.here = "goodbye";
+    };
+        $scope.here = "here";
+
+
+
     // Remove item that is completed from list
     $scope.removeItem = function () {
         for(var it = 0; it < $scope.toDoList.length; it++){

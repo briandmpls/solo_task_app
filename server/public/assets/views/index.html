@@ -22,13 +22,13 @@
 
                 <button class="btn btn-default" ng-click="addNewItem()">Add To List</button>
                 <br/>
-                <button class="removeButton" ng-click="removeItem()">Remove Item</button>
+                <button class="btn" ng-click="newList()">New List</button>
 
                 <ul>
-                    <li ng-repeat="thing in toDoList">
-                        <input class="inputhere" type="checkbox" ng-model="thing.done">
-                        <span class="done-{{thing.done}}"> {{thing.text}} <br/></span>
-                    </li>
+                        <li ng-repeat="thing in toDoList">
+                            <input  ng-class="here" type="checkbox" ng-model="thing.done">
+                            <span ng-class="here" class="done-{{thing.done}}"> {{thing.text}} <br/></span>
+                        </li>
                 </ul>
             </div>
 
