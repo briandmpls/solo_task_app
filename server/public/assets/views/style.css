@@ -1,10 +1,10 @@
 
-
 body{
     background-image: url('/assets/images/desk.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-size: larger;
+    font-family: 'Indie Flower', cursive;
 }
 
 h1{
@@ -16,7 +16,7 @@ h1{
     font-size: larger;
     border-radius: 5px;
 }
-.red {
+.goodbye{
 animation: removed-item-animation 1s cubic-bezier(0.55, -0.04, 0.91, 0.94) forwards;
     /*transform origin is moved to the bottom left corner*/
     transform-origin: 0% 100%;
@@ -39,7 +39,7 @@ li {
     padding-left: 45%;
     list-style-type: none;
     font-size: 30px;
-    font-family: 'Indie Flower', cursive;
+
 }
 
 
