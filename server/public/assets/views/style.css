@@ -46,3 +46,8 @@ li {
 .done-true {
     text-decoration: line-through;
 }
+
+.btn2 {
+    margin: 5px;
+    background-color: white;
+}

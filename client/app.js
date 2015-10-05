@@ -14,8 +14,13 @@ app.controller('MainController', ['$scope', function($scope) {
         return $scope.toDoList.length;
         };
 
-    //Add new input onto DOM list
+    //Add new input onto DOM list and Reinitialize list
     $scope.addNewItem = function () {
+      if($scope.here === "goodbye") {
+          $scope.here = "here";
+          $scope.toDoList = [];
+          console.log("New Item Added");
+      }
         $scope.toDoList.push({text:$scope.newToDoItem, done:false});
         $scope.newToDoItem = '';
     };
@@ -23,8 +28,9 @@ app.controller('MainController', ['$scope', function($scope) {
     //Remove old list
     $scope.newList = function() {
         $scope.here = "goodbye";
+        console.log("Goodbye");
     };
-        $scope.here = "here";
+
 
 
 
@@ -34,6 +40,7 @@ app.controller('MainController', ['$scope', function($scope) {
         	//If it is checked done
         	if($scope.toDoList[it].done) {
         		$scope.toDoList.splice(it,1);
+                console.log("Item removed")
         	}
         }
     };
